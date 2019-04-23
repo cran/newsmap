@@ -33,7 +33,7 @@
 textmodel_newsmap <- function(x, y, smooth = 1, verbose = quanteda_options('verbose')) {
 
     if (!is.dfm(x) || !is.dfm(y))
-        stop('x and y have to be dfms')
+        stop('x and y have to be dfm')
 
     docvars(x) <- NULL
     x <- dfm_trim(x, min_termfreq = 1)
@@ -91,33 +91,42 @@ predict.textmodel_newsmap <- function(object, newdata = NULL, confidence.fit = F
         data <- newdata
     }
     model <- object$model
-    data <- dfm_select(data, as.dfm(model))
+    data <- dfm_match(data, colnames(model))
     data <- dfm_weight(data, 'prop')
     temp <- data %*% Matrix::t(as(model, 'denseMatrix'))
+
+    is_empty <- rowSums(data) == 0
 
     if (type == 'top') {
         if (confidence.fit) {
             if (ncol(temp)) {
-                result <- list(class = apply(temp, 1, function(x) names(sort(x, decreasing = TRUE))[rank]),
-                               confidence.fit = unname(apply(temp, 1, function(x) sort(x, decreasing = TRUE)[rank])))
+                result <- list(class = apply(temp, 1, function(x) names(get_nth(x, rank))),
+                               confidence.fit = unname(apply(temp, 1, function(x) get_nth(x, rank))))
             } else {
                 result$class <- rep(NA, nrow(temp))
             }
+            result$class[is_empty] <- NA
+            result$confidence.fit[is_empty] <- NA
             names(result$class) <- docnames(data)
         } else {
             if (ncol(temp)) {
-                result <- apply(temp, 1, function(x) names(sort(x, decreasing = TRUE))[rank])
+                result <- apply(temp, 1, function(x) names(get_nth(x, rank)))
             } else {
                 result <- rep(NA, nrow(temp))
             }
+            result[is_empty] <- NA
             names(result) <- docnames(data)
         }
     } else {
-        result <- temp[,!apply(temp, 2, function(x) all(x == 0)),drop = FALSE] # remove if all words are zero
+        result <- temp
+        result[is_empty,] <- NA
         rownames(result) <- docnames(data)
     }
-
     return(result)
+}
+
+get_nth <- function(x, rank) {
+    sort(x, decreasing = TRUE)[rank]
 }
 
 #' @noRd
@@ -228,4 +237,27 @@ summary.textmodel_newsmap_accuracy <- function(object, ...) {
     result <- c(p = p, r = r, P = P, R = R)
     return(result)
 }
+
+#' Compute average feature entroy
+#' @param x a dfm for features
+#' @param y a dfm for labels
+#' @param smooth a numeric value for smoothing to include all the features
+#' @export
+afe <- function(x, y, smooth = 1) {
+    if (!is.dfm(x) || !is.dfm(y))
+        stop('x and y have to be dfm')
+    e <- textstat_entropy(group_topics(x, y) + smooth,
+                          margin = "features")
+    return(mean(e))
+}
+
+group_topics <- function(x, y) {
+    result <- matrix(NA, nrow = nfeat(y), ncol = nfeat(x),
+                     dimnames = list(featnames(y), featnames(x)))
+    for (i in seq_len(nfeat(y))) {
+        result[i,] <- colSums(dfm_subset(x, rowSums(y[,i]) > 0))
+    }
+    return(as.dfm(result))
+}
+
 
