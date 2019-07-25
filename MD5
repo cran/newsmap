@@ -1,14 +1,15 @@
-4312a98c494a9f1f87256ac07cdad5d1 *DESCRIPTION
+7eb364b2ebef3d2b0319ee19008deee9 *DESCRIPTION
 835d1cee7565153fc6cfce9728bc5fdc *LICENSE
 04623cdc3f440f307d7beb979c91d01a *NAMESPACE
-dc97672eb86d278c79b8077f2b29c238 *NEWS.md
-a19b97634358a5c88a5a3e76fa838619 *R/data.R
+c608c943a653418acbbf97bb83028472 *NEWS.md
+046f885cce7a01a824be9e2775c8cf65 *R/data.R
 667da1387764ac6156b66cdb2c578028 *R/textmodel_newsmap.R
-074a688d7f0d4aaad24ae490b06d7cf2 *README.md
+e9e1945ebd00400202ad1db0da90486e *README.md
 d3bfd30adc7b6705764fede5591a67ec *data/data_dictionary_newsmap_de.RData
 a91993458c622fed7669a262c4968ccd *data/data_dictionary_newsmap_en.RData
 69d11c092f1d0f1ddd677753939aad39 *data/data_dictionary_newsmap_es.RData
 18db8284b7b662885e322265a8af97f1 *data/data_dictionary_newsmap_fr.RData
+fd8edd3806e77c57cbccab6ceaa74580 *data/data_dictionary_newsmap_it.RData
 c3a22876e9af000782a3ff27444510a9 *data/data_dictionary_newsmap_ja.RData
 bc3e800d8692bc0b5e2692d2592d59a1 *data/data_dictionary_newsmap_ru.RData
 5c1054ff0a73b6d69df118405fc0544c *data/data_dictionary_newsmap_zh_cn.RData
@@ -20,6 +21,7 @@ c67c8c1ddf6c8de5ed03c63ca2067157 *man/data_dictionary_newsmap_de.Rd
 d219f25efb68857deedf4bf27bba927b *man/data_dictionary_newsmap_en.Rd
 e8ea203dc4d7898fe6201b37ceeee820 *man/data_dictionary_newsmap_es.Rd
 bf2542674c2f20834fa2177e0a4afd75 *man/data_dictionary_newsmap_fr.Rd
+8c3bd42ac75dd286947a952f05123cb6 *man/data_dictionary_newsmap_it.Rd
 2fca54a6cf48e0e0d30bccb20c802331 *man/data_dictionary_newsmap_ja.Rd
 b99e9b5bb2a568f3b3d47009684cec45 *man/data_dictionary_newsmap_ru.Rd
 d7704778fa5ff62edb6defbb8724385e *man/data_dictionary_newsmap_zh_cn.Rd
@@ -31,5 +33,5 @@ c1136ed0d24ded1cd0406bc56a4f7090 *man/data_dictionary_newsmap_zh_tw.Rd
 df19bbc3f2cf19e4df198873f0344eff *man/summary.textmodel_newsmap_accuracy.Rd
 9812a770034da6411ece61b1b3e4218b *man/textmodel_newsmap.Rd
 c9de49fdb12e9b94dcb38a09a43c7399 *tests/testthat.R
-5a5860cdb39da4081573ce377056da35 *tests/testthat/test-data.R
+9b5ec042c006367daf7a0477d117dc17 *tests/testthat/test-data.R
 927aed6bf6ab7e8a7ea03d58df9c51cf *tests/testthat/test-textmodel_newsmap.R
