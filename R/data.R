@@ -54,6 +54,22 @@ NULL
 #' @keywords data
 NULL
 
+#' Seed geographical dictionary in Hebrew
+#'
+#' @name data_dictionary_newsmap_he
+#' @docType data
+#' @author Elad Segev \email{eladseg@gmail.com}
+#' @keywords data
+NULL
+
+#' Seed geographical dictionary in Arabic
+#'
+#' @name data_dictionary_newsmap_ar
+#' @docType data
+#' @author Dai Yamao \email{daiyamao@scs.kyushu-u.ac.jp}
+#' @keywords data
+NULL
+
 #' Seed geographical dictionary in Chinese (simplified)
 #'
 #' @name data_dictionary_newsmap_zh_cn

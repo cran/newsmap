@@ -1,7 +1,7 @@
 Package: newsmap
 Type: Package
 Title: Semi-Supervised Model for Geographical Document Classification
-Version: 0.6.9
+Version: 0.7.0
 Authors@R: c(person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = c("aut", "cre", "cph")), 
              person("Stefan", "Müller", email = "mullers@tcd.ie", role = "aut"),
              person("Dani", "Madrid-Morales", email = "dani.madrid@my.cityu.edu.hk", role = "aut"),
@@ -9,22 +9,23 @@ Authors@R: c(person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", rol
              person("Ke", "Cheng", email = "kecheng.ac@gmail.com", role = "aut"),
 	         person("Chung-hong", "Chan", email = "chainsawtiney@gmail.com", role = "aut"),
 	         person("Claude", "Grasland", email = "claude.grasland@parisgeo.cnrs.fr", role = "aut"),
-	         person("Giuseppe", "Carteny", email = "giuseppe.carteny@unimi.it", role = "aut"))
+	         person("Giuseppe", "Carteny", email = "giuseppe.carteny@unimi.it", role = "aut"),
+	         person("Elad", "Segev", email = "eladseg@gmail.com", role = "aut"),
+	         person("Dai", "Yamao", email = "daiyamao@scs.kyushu-u.ac.jp", role = "aut"))
 Maintainer: Kohei Watanabe <watanabe.kohei@gmail.com>
 Description: Semi-supervised model for geographical document classification (Watanabe 2018) <doi:10.1080/21670811.2017.1293487>. 
-    This package currently contains seed dictionaries in English, German, French, Spanish, Japanese, Russian and Chinese (Simplified and Traditional).
+    This package currently contains seed dictionaries in English, German, French, Spanish, Russian, Hebrew, Arabic Japanese and Chinese (Simplified and Traditional).
 License: MIT + file LICENSE
 URL: https://github.com/koheiw/newsmap
 BugReports: https://github.com/koheiw/newsmap/issues
 LazyData: TRUE
 Encoding: UTF-8
-Depends: R (>= 3.5.0), methods
-Imports: utils, Matrix, quanteda (> 1.4), stringi,
+Depends: R (>= 3.5), methods
+Imports: utils, Matrix, quanteda (>= 1.4), stringi,
 Suggests: testthat,
-RoxygenNote: 6.1.1
-Collate: textmodel_newsmap.R data.R
+RoxygenNote: 7.0.2
 NeedsCompilation: no
-Packaged: 2019-07-27 19:12:14 UTC; kohei
+Packaged: 2019-12-11 18:10:04 UTC; kohei
 Author: Kohei Watanabe [aut, cre, cph],
   Stefan Müller [aut],
   Dani Madrid-Morales [aut],
@@ -32,6 +33,8 @@ Author: Kohei Watanabe [aut, cre, cph],
   Ke Cheng [aut],
   Chung-hong Chan [aut],
   Claude Grasland [aut],
-  Giuseppe Carteny [aut]
+  Giuseppe Carteny [aut],
+  Elad Segev [aut],
+  Dai Yamao [aut]
 Repository: CRAN
-Date/Publication: 2019-07-29 10:00:03 UTC
+Date/Publication: 2019-12-11 23:50:02 UTC
