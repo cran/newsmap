@@ -1,7 +1,7 @@
 Package: newsmap
 Type: Package
 Title: Semi-Supervised Model for Geographical Document Classification
-Version: 0.7.0
+Version: 0.7.1
 Authors@R: c(person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = c("aut", "cre", "cph")), 
              person("Stefan", "Müller", email = "mullers@tcd.ie", role = "aut"),
              person("Dani", "Madrid-Morales", email = "dani.madrid@my.cityu.edu.hk", role = "aut"),
@@ -25,7 +25,7 @@ Imports: utils, Matrix, quanteda (>= 1.4), stringi,
 Suggests: testthat,
 RoxygenNote: 7.0.2
 NeedsCompilation: no
-Packaged: 2019-12-11 18:10:04 UTC; kohei
+Packaged: 2020-02-02 21:42:18 UTC; kohei
 Author: Kohei Watanabe [aut, cre, cph],
   Stefan Müller [aut],
   Dani Madrid-Morales [aut],
@@ -37,4 +37,4 @@ Author: Kohei Watanabe [aut, cre, cph],
   Elad Segev [aut],
   Dai Yamao [aut]
 Repository: CRAN
-Date/Publication: 2019-12-11 23:50:02 UTC
+Date/Publication: 2020-02-02 22:00:02 UTC

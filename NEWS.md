@@ -1,3 +1,8 @@
+# Change in v0.7.1
+
+* Optimize efficiency of `textmodel_newsmap()`
+* Add compatibility with newer `textstat_entropy()`
+
 # Changes in v0.7.0
 
 * Add Hebrew and Arabic seed dictionaries

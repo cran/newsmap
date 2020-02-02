@@ -1,10 +1,10 @@
-b4c70106a5e0ae6e553fc5a27744551c *DESCRIPTION
+74bf0e1fbfdd153a703646fca85031c4 *DESCRIPTION
 835d1cee7565153fc6cfce9728bc5fdc *LICENSE
 04623cdc3f440f307d7beb979c91d01a *NAMESPACE
-efa8db58fd8324a44c7c5e1bd33048d0 *NEWS.md
+b1cd1a930f6a6a8f6536c1d74a74cd39 *NEWS.md
 00fcb985942167a30b99dc1641c10ac7 *R/data.R
-667da1387764ac6156b66cdb2c578028 *R/textmodel_newsmap.R
-32c69d8b6e24991273befff9f263ff7e *README.md
+e556d20e804c9ff37d9b3d527fcdfede *R/textmodel_newsmap.R
+4c8943bee9a549b24813794060b5cb80 *README.md
 52ce38f71bd02a968e7bb7a0ad4ce082 *data/data_dictionary_newsmap_ar.RData
 44c1deee77436e45c60a1492c06ca33f *data/data_dictionary_newsmap_de.RData
 98fb0199ebcd1c2de1953b6002ab1621 *data/data_dictionary_newsmap_en.RData
@@ -18,7 +18,7 @@ e54238648ff1e140845fd930bc5a2d42 *data/data_dictionary_newsmap_ja.RData
 002a0e34c2e95795462e178a793f0eba *data/data_dictionary_newsmap_zh_tw.RData
 1cf33733cd7dd5c4a7a59a979617353f *inst/CITATION
 531151d991cb96b5357c11ea251bd43d *man/accuracy.Rd
-dee577c48d01bf171347f3f2b3d865a9 *man/afe.Rd
+f5bc9c08596495ab596e251b24786e5a *man/afe.Rd
 b6524dded5ce815403d5bb4dda0c5b83 *man/data_dictionary_newsmap_ar.Rd
 c67c8c1ddf6c8de5ed03c63ca2067157 *man/data_dictionary_newsmap_de.Rd
 d219f25efb68857deedf4bf27bba927b *man/data_dictionary_newsmap_en.Rd
