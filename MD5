@@ -1,10 +1,10 @@
-74bf0e1fbfdd153a703646fca85031c4 *DESCRIPTION
+4c83d554ad00435fa008a3761b20cbc0 *DESCRIPTION
 835d1cee7565153fc6cfce9728bc5fdc *LICENSE
 04623cdc3f440f307d7beb979c91d01a *NAMESPACE
-b1cd1a930f6a6a8f6536c1d74a74cd39 *NEWS.md
+7c78191f31c9473a02e86e9f614731e0 *NEWS.md
 00fcb985942167a30b99dc1641c10ac7 *R/data.R
-e556d20e804c9ff37d9b3d527fcdfede *R/textmodel_newsmap.R
-4c8943bee9a549b24813794060b5cb80 *README.md
+f1de30065e3aaffbd25063796ed084c8 *R/textmodel_newsmap.R
+7d5d55ffcce182e6a8fa2d724328a241 *README.md
 52ce38f71bd02a968e7bb7a0ad4ce082 *data/data_dictionary_newsmap_ar.RData
 44c1deee77436e45c60a1492c06ca33f *data/data_dictionary_newsmap_de.RData
 98fb0199ebcd1c2de1953b6002ab1621 *data/data_dictionary_newsmap_en.RData
@@ -32,7 +32,7 @@ d7704778fa5ff62edb6defbb8724385e *man/data_dictionary_newsmap_zh_cn.Rd
 c1136ed0d24ded1cd0406bc56a4f7090 *man/data_dictionary_newsmap_zh_tw.Rd
 658a8a0c6bf01db3575b05784a49a158 *man/images/unnamed-chunk-5-1.png
 658a8a0c6bf01db3575b05784a49a158 *man/images/unnamed-chunk-7-1.png
-3579ef7ad147b49de9c90003f79f8767 *man/predict.textmodel_newsmap.Rd
+952f65be366ff574fa90f4cd120122af *man/predict.textmodel_newsmap.Rd
 2fbb74d73312b07cb8aa07367e0620d2 *man/print.textmodel_newsmap_summary.Rd
 df19bbc3f2cf19e4df198873f0344eff *man/summary.textmodel_newsmap_accuracy.Rd
 5d4e36e6fc4c2369af0394e2fe980e55 *man/textmodel_newsmap.Rd
