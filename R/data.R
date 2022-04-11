@@ -38,11 +38,20 @@ NULL
 #' @keywords data
 NULL
 
+#' Seed geographical dictionary in Portuguese
+#'
+#' @name data_dictionary_newsmap_pt
+#' @docType data
+#' @author Barbara Ellynes Zucchi Nobre Silva \email{barbara@zucchi.science}
+#' @keywords data
+NULL
+
 #' Seed geographical dictionary in Russian
 #'
 #' @name data_dictionary_newsmap_ru
 #' @docType data
 #' @author Katerina Tertytchnaya \email{katerina.tertytchnaya@gmail.com}
+#' @author Lanabi la Lova \email{S.Bilalova@lse.ac.uk}
 #' @keywords data
 NULL
 
