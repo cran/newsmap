@@ -1,3 +1,8 @@
+## Changens in v0.8.2
+
+* Add `min_conf` to `predict()`
+* Add experimental argument `entropy` to `textmodel_newsmap()`
+
 ## Changens in v0.8.1
 
 * Update the seed words for UA (#64)
