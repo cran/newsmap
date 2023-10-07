@@ -32,7 +32,7 @@ print.summary.textmodel <- function(x, digits = max(3L, getOption("digits") - 3L
 #' @export
 as.summary.textmodel <- function(x) {
     class(x) <- c("summary.textmodel", "list")
-    x
+    return(x)
 }
 
 #
@@ -113,7 +113,7 @@ as.coefficients_textmodel.numeric <- function(x) {
 }
 
 #' @noRd
-#' @method as.coefficients_textmodel numeric
+#' @method as.coefficients_textmodel matrix
 #' @keywords internal
 #' @export
 as.coefficients_textmodel.matrix <- function(x) {

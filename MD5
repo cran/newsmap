@@ -1,11 +1,11 @@
-66f72cb46f01185118b40d3f05a3ca82 *DESCRIPTION
+23ccec75ae167d2775f4b1dd4edb200d *DESCRIPTION
 6918790a0df60fd55bd29a4ee6eafabf *LICENSE
-7f293a2f451b4b3c54a5c389bfb98280 *NAMESPACE
-78d5ffe7234ba5556d79edeabd3bc1e2 *NEWS.md
+5225566c10eb47f86eb4cd9da08e603c *NAMESPACE
+ca8e4ffb408f225c4398039ad41f00c0 *NEWS.md
 389259597153765a5115961a3173c73a *R/data.R
 d7c38bd1a06f7680eb511d65fb764946 *R/predict.R
-4a2af646be7893d80987cdf53683c10d *R/textmodel-methods.R
-debcd8fe99adf2a2d0a3fde862643106 *R/textmodel.R
+e43ee5e0e31ada23e1a2fd379108a912 *R/textmodel-methods.R
+bb4b57b23db924ccfe745df27aef6b3a *R/textmodel.R
 0603797ed0ede227b45ea590adee23fd *R/utils.R
 5b4c3ca671ce62560d48ab15bb02aeb0 *data/data_dictionary_newsmap_ar.RData
 9731396bf5614563a28285860255e852 *data/data_dictionary_newsmap_de.RData
