@@ -4,7 +4,7 @@ toks_test <- tokens(data_corpus_inaugural, remove_punct = TRUE)
 dfmt_test <- dfm(toks_test) %>%
     dfm_remove(stopwords("en"))
 toks_dict_test <- tokens_lookup(toks_test, data_dictionary_newsmap_en, level = 3)
-dfmt_dict_test <- dfm(toks_test)
+dfmt_dict_test <- dfm(toks_dict_test)
 
 test_that("textmodel_newsmap() works with different inputs", {
     toks <- tokens(data_corpus_inaugural, remove_punct = TRUE) %>%
@@ -71,7 +71,8 @@ test_that("methods for textmodel_newsmap works correctly", {
 
     expect_equal(
         names(map),
-        c("model", "entropy", "data", "weight", "feature", "call", "version")
+        c("model", "entropy", "data", "weight", "feature",
+          "concatenator", "call", "version")
     )
 
     # class association is calculated correctly
@@ -191,3 +192,47 @@ test_that("afe() is working", {
     expect_error(afe(list(), dfmt_label))
 })
 
+test_that("coef() and dictionary() are working", {
+
+    dfmt <- dfm_trim(dfmt_test, min_termfreq = 100)
+    dfmt_dict <- dfm_trim(dfmt_dict_test, min_termfreq = 2)
+
+    map <- textmodel_newsmap(dfmt, dfmt_dict)
+
+    expect_true(all(lengths(coef(map, n = 5)) == 5))
+    expect_identical(coef(map)[c("us")],
+                     coef(map, select = c("us")))
+    expect_identical(coef(map)[c("us", "ru", "gb")],
+                     coef(map, select = c("us", "gb", "ru")))
+    expect_identical(coef(map, select = c("ru", "gb", "us")),
+                     coef(map, select = c("us", "gb", "ru")))
+
+    expect_error(coef(map, n = -1),
+                 "The value of n must be between 0 and Inf")
+    expect_error(coef(map, select = "xx"),
+                 "Selected class must be in the model")
+    expect_error(coef(map, select = character()),
+                 "The length of select must be between 1 and 16")
+
+    # TODO: remove as.list()
+    lis1 <- as.list(map)
+    expect_equal(length(lis1), 16)
+    expect_true(all(sapply(lis1, is.character)))
+    expect_true(all(lengths(as.list(lis1)) == 10))
+
+    lis2 <- as.list(map, n = 20, c("ru", "fr"))
+    expect_equal(names(lis2), c("ru", "fr"))
+    expect_true(all(sapply(lis2, is.character)))
+    expect_true(all(lengths(lis2) == 20))
+
+    # TODO: change to as.dictionary()
+    dict1 <- newsmap:::as.dictionary.textmodel_newsmap(map)
+    expect_s4_class(dict1, "dictionary2")
+    expect_true(all(lengths(as.list(dict1)) == 10))
+
+    dict2 <- newsmap:::as.dictionary.textmodel_newsmap(map, n = 20, c("ru", "fr"))
+    expect_s4_class(dict2, "dictionary2")
+    expect_equal(names(dict2), c("ru", "fr"))
+    expect_true(all(lengths(dict2) == 20))
+
+})

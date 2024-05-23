@@ -1,3 +1,16 @@
+#' @keywords internal
+#' @export
+#' @method as.list textmodel_newsmap
+#' @param ... passed to [coef.textmodel_newsmap]
+as.list.textmodel_newsmap <- function(x, ...) {
+    lapply(coef(x, ...), names)
+}
+
+#' @export
+#' @method as.dictionary textmodel_newsmap
+as.dictionary.textmodel_newsmap <- function(x, ...) {
+    dictionary(lapply(coef(x, ...), names), separator = x$concatenator)
+}
 
 #' @export
 #' @method print textmodel_newsmap
