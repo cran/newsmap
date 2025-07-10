@@ -1,11 +1,11 @@
-8071c6e0ffbec3dc5e1f4c983ff929f6 *DESCRIPTION
+21bd3dd290e554001cefacd66504a7a7 *DESCRIPTION
 6918790a0df60fd55bd29a4ee6eafabf *LICENSE
-447a1288d459dff6ae06026fa727a0ae *NAMESPACE
-b9049a5196794db26021015c588b0e4e *NEWS.md
+fe68562579ef0d05b1f8c98dedb22313 *NAMESPACE
+a96334f427b97a92d7b3e16aa90c9cc1 *NEWS.md
 91d8d3b86806cae9c870e53e5e1cdb56 *R/data.R
 d7c38bd1a06f7680eb511d65fb764946 *R/predict.R
 e43ee5e0e31ada23e1a2fd379108a912 *R/textmodel-methods.R
-71821cfca587240e0b520a51c8962a8a *R/textmodel.R
+83f04c1848cb138e31f11498fc4b86df *R/textmodel.R
 772da3a07dd379fa0e4db29727c0dd62 *R/utils.R
 5b4c3ca671ce62560d48ab15bb02aeb0 *data/data_dictionary_newsmap_ar.RData
 9731396bf5614563a28285860255e852 *data/data_dictionary_newsmap_de.RData
@@ -48,9 +48,9 @@ f9f9616529371e8ed27143335f1b1236 *man/data_dictionary_newsmap_zh_tw.Rd
 47f0760657c0abe10c699acca06b61c8 *man/print.statistics_textmodel.Rd
 19c62f0d232582f1e2ab43a7ccc0ad63 *man/print.summary.textmodel.Rd
 6385ad81499a3f93de3edde1bb614dfa *man/summary.textmodel_newsmap_accuracy.Rd
-431ef2dd53b082556a4b4888cc40a4ff *man/textmodel_newsmap.Rd
+f04d891ee508b7bb6bc3b01c40c17513 *man/textmodel_newsmap.Rd
 ca46b5f3d322499504e0b3b7c575ce51 *tests/testthat.R
 fb832e9ec35ebdeda2e5304e62e1f3e4 *tests/testthat/test-data.R
 a464f3a309dec595ce2f7d777ad633f8 *tests/testthat/test-dictionary.R
 ff72987e557b306ab8e9dba1ca90ea1d *tests/testthat/test-predict.R
-9320a2375bd59fd8e6cc1c8b9d4003b0 *tests/testthat/test-textmodel.R
+309239b17fdbb81bf9dd1773734d2a76 *tests/testthat/test-textmodel.R
